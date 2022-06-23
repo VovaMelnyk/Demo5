@@ -6,6 +6,7 @@
   outline: none;
   padding: 12px 25px 15px 15px;
   padding: 12px 25px 15px;
+  padding: 22px 36px;   
   padding: 25px;
 } */
 
@@ -110,4 +111,142 @@
 
 .social-link {
   text-decoration: none;
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  /* ширина екрана = 2170px */
+  /* ширина класу content = 1170px */
+  /* від ширини екрану віднімаємо ширину content = 1000px */
+  /* різниця ділиться на 2 = 500px */
+  /* 500px зліва і 500px справа */
+}
+
+/* herro section */
+
+.hero {
+  background-color: #f8f3ec;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  font-family: var(--main-font);
+  font-size: 82px;
+  line-height: 71px;
+  font-weight: 600;
+  color: var(--primary-color);
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: var(--text-size);
+  margin-bottom: 40px;
+  margin-top: 0;
+  width: 370px;
+}
+
+.hero-btn {
+  font-family: var(--main-font);
+  font-size: var(--text-size);
+  text-transform: uppercase;
+  background-color: var(--accent-color);
+  border: none;
+  padding: 20px 36px;
+  border-radius: 16px;
+}
+
+.hero-btn:hover {
+  background-color: red;
+}
+
+.hero-img {
+  width: 278px;
+  height: 653px;
+}
+
+.hero-img:first-child {
+  margin-right: 14px;
+}
+
+.hero-container {
+  font-size: 0;
+}
+
+.hero-left-side {
+  margin-right: 96px;
+}
+
+.hero-right-side {
+  padding: 63px 0 54px;
+}
+
+/* clients */
+
+.clients-right-side {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 695px;
+}
+
+/* 695
+224 * 3 = 672 + 33 = 705 */
+
+.clients-img {
+  width: 224px;
+  height: 91px;
+  margin-right: 11px;
+  margin-bottom: 11px;
+}
+
+/* an+b
+a - елемент з якого починаємо відлік
+b - крок який використовуємо для роботи */
+
+.clients-img:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.clients-title {
+  font-family: var(--main-font);
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 600;
+  width: 314px;
+  margin-bottom: 10px;
+}
+
+.clients-text {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: var(--text-size);
+  color: var(--secondary-color);
+  margin-top: 0;
+  width: 295px;
+}
+
+.clients-left-side {
+  margin-right: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.clients-left-side::before {
+  width: 5px;
+  height: 146px;
+  background-color: var(--accent-color);
+  content: "";
+  display: inline-block;
+  margin-right: 30px;
 }
